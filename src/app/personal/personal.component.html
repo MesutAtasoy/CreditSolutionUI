@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row content-row">
+    <div class="col-md-12 content-area">
+      <div class="content-alignment">
+        <div style="text-align: center;">
+          <h1>Application of Credit</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label>Identity Number</label>
+            <input type="text" [(ngModel)]="oInput.IdentityNumber" name="IdentityNumber" class="form-control" placeholder="Identity Number" required>
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="oInput.Name" name="Name" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" [(ngModel)]="oInput.PhoneNumber" name="PhoneNumber" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <label>Monthly Income</label>
+            <input type="number" [(ngModel)]="oInput.MonthlyIncome" name="MonthlyIncome" class="form-control" placeholder="Monthly Income" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" (click)="sendPersonelData()">Submit</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="content-alignment">
+        {{message}}
+      </div>
+    </div>
+  </div>
+</div>
